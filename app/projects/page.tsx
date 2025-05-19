@@ -1,7 +1,10 @@
 import projectsData from '@/data/projectsData'
-import Card from '@/components/Card'
+import Card from '@/components/blog/Card'
 import { genPageMetadata } from 'app/seo'
 
+export async function generateStaticParams() {
+  return [{ params: {} }]
+}
 export const metadata = genPageMetadata({ title: 'Projects' })
 
 export default function Projects() {
